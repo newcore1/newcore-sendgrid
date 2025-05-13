@@ -26,16 +26,16 @@
     <section class="form-section">
       <form class="request-form">
         <label for="name">اسمك الكامل</label>
-        <input type="text" id="name" name="name" placeholder="أدخل اسمك">
+        <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
 
         <label for="email">البريد الإلكتروني</label>
-        <input type="email" id="email" name="email" placeholder="example@mail.com">
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
 
         <label for="phone">رقم الجوال</label>
-        <input type="tel" id="phone" name="phone" placeholder="05XXXXXXXX">
+        <input type="tel" id="phone" name="phone" placeholder="05XXXXXXXX" required>
 
         <label for="keymaster">رابط Keymaster (FiveM)</label>
-        <input type="url" id="keymaster" name="keymaster" placeholder="https://keymaster.fivem.net/users/...">
+        <input type="url" id="keymaster" name="keymaster" placeholder="https://keymaster.fivem.net/users/..." required>
 
         <div class="buttons">
           <button type="submit">إرسال الطلب</button>
@@ -47,7 +47,7 @@
     <div id="verify-modal" class="modal">
       <div class="modal-content">
         <h3>رمز التحقق</h3>
-        <p>أدخل رمز التحقق الذي تم إرساله إلى بريدك أو رقمك:</p>
+        <p>أدخل رمز التحقق الذي تم إرساله إلى بريدك:</p>
         <input type="text" id="verify-code" placeholder="أدخل رمز التحقق هنا">
         <div class="modal-buttons">
           <button id="send-code-btn">إرسال الرمز مرة أخرى</button>
