@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     verificationCode = Math.floor(100000 + Math.random() * 900000).toString();
 
-    fetch("http://localhost:3000/send-code", {
+    fetch("https://newcore-sendgrid.onrender.com/send-code", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email: email, code: verificationCode })
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("يرجى إدخال بريد إلكتروني.");
       return;
     }
-    fetch("http://localhost:3000/send-code", {
+    fetch("https://newcore-sendgrid.onrender.com/send-code", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email: email, code: verificationCode })
